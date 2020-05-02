@@ -1,0 +1,1048 @@
+
+
+Starting 20th run
+device= cuda
+batch_size= 30
+n_epochs= 40
+init_lr= 0.01
+Deeppose(
+  (alexnet): AlexNet(
+    (features): Sequential(
+      (0): Conv2d(3, 64, kernel_size=(11, 11), stride=(4, 4), padding=(2, 2))
+      (1): ReLU(inplace=True)
+      (2): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (3): Conv2d(64, 192, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+      (4): ReLU(inplace=True)
+      (5): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (6): Conv2d(192, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (7): ReLU(inplace=True)
+      (8): Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (9): ReLU(inplace=True)
+      (10): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (11): ReLU(inplace=True)
+      (12): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+    (avgpool): AdaptiveAvgPool2d(output_size=(6, 6))
+    (classifier): Sequential(
+      (0): Dropout(p=0.5, inplace=False)
+      (1): Linear(in_features=9216, out_features=4096, bias=True)
+      (2): ReLU(inplace=True)
+      (3): Dropout(p=0.5, inplace=False)
+      (4): Linear(in_features=4096, out_features=4096, bias=True)
+      (5): ReLU(inplace=True)
+      (6): Dropout(p=0.5, inplace=False)
+      (7): Linear(in_features=4096, out_features=2048, bias=True)
+      (8): ReLU(inplace=True)
+      (9): Dropout(p=0.5, inplace=False)
+      (10): Linear(in_features=2048, out_features=32, bias=True)
+      (11): Sigmoid()
+    )
+  )
+)
+Starting loading train images ... ...
+Successfully loaded 22246 train images
+torch.Size([3, 256, 256]) torch.Size([32]) torch.Size([16, 2]) torch.Size([1])
+train_dataset_size= 22246
+train_loader_size= 742
+Starting loading val images ... ...
+Successfully loaded 2958 val images
+torch.Size([3, 256, 256]) torch.Size([32]) torch.Size([16, 2]) torch.Size([1])
+val_dataset_size= 2958
+val_loader_size= 99
+HBox(children=(FloatProgress(value=0.0, max=40.0), HTML(value='')))
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:1/41, train_loss: 0.2422023
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:2/41, train_loss: 0.2424154
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:3/41, train_loss: 0.2426999
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:4/41, train_loss: 0.2424686
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:4/41, val_loss: 0.2364300
+Updating best test loss: 0.2364300
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:5/41, train_loss: 0.2424530
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:6/41, train_loss: 0.2425221
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:7/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:8/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:8/41, val_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:9/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:10/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:11/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:12/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:12/41, val_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:13/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:14/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:15/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:16/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:16/41, val_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:17/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:18/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:19/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:20/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:20/41, val_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:21/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:22/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:23/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:24/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:24/41, val_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:25/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:26/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:27/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:28/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:28/41, val_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:29/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:30/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:31/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:32/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:32/41, val_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:33/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:34/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:35/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:36/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:36/41, val_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:37/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:38/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:39/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:40/41, train_loss: nan
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:40/41, val_loss: nan
+
+train_losses:
+ [0.24220234155654907, 0.24241535365581512, 0.24269987642765045, 0.24246856570243835, 0.24245302379131317, 0.24252209067344666, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan, nan]
+val_losses:
+ [0.23643000423908234, nan, nan, nan, nan, nan, nan, nan, nan, nan]
+
+
+Starting 21th run
+device= cuda
+batch_size= 30
+n_epochs= 40
+init_lr= 0.001
+Deeppose(
+  (alexnet): AlexNet(
+    (features): Sequential(
+      (0): Conv2d(3, 64, kernel_size=(11, 11), stride=(4, 4), padding=(2, 2))
+      (1): ReLU(inplace=True)
+      (2): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (3): Conv2d(64, 192, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+      (4): ReLU(inplace=True)
+      (5): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (6): Conv2d(192, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (7): ReLU(inplace=True)
+      (8): Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (9): ReLU(inplace=True)
+      (10): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (11): ReLU(inplace=True)
+      (12): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+    (avgpool): AdaptiveAvgPool2d(output_size=(6, 6))
+    (classifier): Sequential(
+      (0): Dropout(p=0.5, inplace=False)
+      (1): Linear(in_features=9216, out_features=4096, bias=True)
+      (2): ReLU(inplace=True)
+      (3): Dropout(p=0.5, inplace=False)
+      (4): Linear(in_features=4096, out_features=4096, bias=True)
+      (5): ReLU(inplace=True)
+      (6): Dropout(p=0.5, inplace=False)
+      (7): Linear(in_features=4096, out_features=2048, bias=True)
+      (8): ReLU(inplace=True)
+      (9): Dropout(p=0.5, inplace=False)
+      (10): Linear(in_features=2048, out_features=32, bias=True)
+      (11): Sigmoid()
+    )
+  )
+)
+Starting loading train images ... ...
+Successfully loaded 22246 train images
+torch.Size([3, 256, 256]) torch.Size([32]) torch.Size([16, 2]) torch.Size([1])
+train_dataset_size= 22246
+train_loader_size= 742
+Starting loading val images ... ...
+Successfully loaded 2958 val images
+torch.Size([3, 256, 256]) torch.Size([32]) torch.Size([16, 2]) torch.Size([1])
+val_dataset_size= 2958
+val_loader_size= 99
+HBox(children=(FloatProgress(value=0.0, max=40.0), HTML(value='')))
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:1/41, train_loss: 0.2122800
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:2/41, train_loss: 0.2500612
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:3/41, train_loss: 0.2507744
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:4/41, train_loss: 0.2506287
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:4/41, val_loss: 0.2458253
+Updating best test loss: 0.2458253
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:5/41, train_loss: 0.2510950
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:6/41, train_loss: 0.2509982
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:7/41, train_loss: 0.2508483
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:8/41, train_loss: 0.2511117
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:8/41, val_loss: 0.2459071
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:9/41, train_loss: 0.2507391
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:10/41, train_loss: 0.2512647
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:11/41, train_loss: 0.2509759
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:12/41, train_loss: 0.2509632
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:12/41, val_loss: 0.2458154
+Updating best test loss: 0.2458154
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:13/41, train_loss: 0.2509297
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:14/41, train_loss: 0.2509595
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:15/41, train_loss: 0.2514154
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:16/41, train_loss: 0.2511085
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:16/41, val_loss: 0.2458903
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:17/41, train_loss: 0.2509386
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:18/41, train_loss: 0.2510858
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:19/41, train_loss: 0.2513560
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:20/41, train_loss: 0.2508837
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:20/41, val_loss: 0.2458141
+Updating best test loss: 0.2458141
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:21/41, train_loss: 0.2514003
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:22/41, train_loss: 0.2509327
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:23/41, train_loss: 0.2511087
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:24/41, train_loss: 0.2510555
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:24/41, val_loss: 0.2458279
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:25/41, train_loss: 0.2510308
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:26/41, train_loss: 0.2514155
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:27/41, train_loss: 0.2513538
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:28/41, train_loss: 0.2508164
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:28/41, val_loss: 0.2458028
+Updating best test loss: 0.2458028
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:29/41, train_loss: 0.2513792
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:30/41, train_loss: 0.2510650
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:31/41, train_loss: 0.2511077
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:32/41, train_loss: 0.2512379
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:32/41, val_loss: 0.2458604
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:33/41, train_loss: 0.2509954
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:34/41, train_loss: 0.2511810
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:35/41, train_loss: 0.2510815
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:36/41, train_loss: 0.2512915
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:36/41, val_loss: 0.2458567
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:37/41, train_loss: 0.2513700
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:38/41, train_loss: 0.2509630
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:39/41, train_loss: 0.2511845
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:40/41, train_loss: 0.2515441
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:40/41, val_loss: 0.2458578
+
+train_losses:
+ [0.2122800201177597, 0.2500612437725067, 0.2507743537425995, 0.2506287395954132, 0.2510949671268463, 0.25099822878837585, 0.25084826350212097, 0.2511116564273834, 0.25073912739753723, 0.25126466155052185, 0.2509758770465851, 0.2509631812572479, 0.25092968344688416, 0.25095945596694946, 0.2514154016971588, 0.2511085271835327, 0.2509385645389557, 0.2510857880115509, 0.2513560354709625, 0.25088366866111755, 0.25140026211738586, 0.2509326636791229, 0.25110873579978943, 0.2510554790496826, 0.2510307729244232, 0.251415491104126, 0.25135383009910583, 0.25081637501716614, 0.25137922167778015, 0.25106504559516907, 0.25110769271850586, 0.2512378990650177, 0.2509954273700714, 0.251181036233902, 0.25108152627944946, 0.2512914836406708, 0.25137004256248474, 0.250963032245636, 0.25118449330329895, 0.25154414772987366]
+val_losses:
+ [0.24582533538341522, 0.24590711295604706, 0.2458154261112213, 0.2458903044462204, 0.24581407010555267, 0.24582785367965698, 0.2458028346300125, 0.24586038291454315, 0.2458566576242447, 0.24585777521133423]
+
+
+Starting 22th run
+device= cuda
+batch_size= 30
+n_epochs= 40
+init_lr= 0.0001
+Deeppose(
+  (alexnet): AlexNet(
+    (features): Sequential(
+      (0): Conv2d(3, 64, kernel_size=(11, 11), stride=(4, 4), padding=(2, 2))
+      (1): ReLU(inplace=True)
+      (2): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (3): Conv2d(64, 192, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+      (4): ReLU(inplace=True)
+      (5): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (6): Conv2d(192, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (7): ReLU(inplace=True)
+      (8): Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (9): ReLU(inplace=True)
+      (10): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (11): ReLU(inplace=True)
+      (12): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+    (avgpool): AdaptiveAvgPool2d(output_size=(6, 6))
+    (classifier): Sequential(
+      (0): Dropout(p=0.5, inplace=False)
+      (1): Linear(in_features=9216, out_features=4096, bias=True)
+      (2): ReLU(inplace=True)
+      (3): Dropout(p=0.5, inplace=False)
+      (4): Linear(in_features=4096, out_features=4096, bias=True)
+      (5): ReLU(inplace=True)
+      (6): Dropout(p=0.5, inplace=False)
+      (7): Linear(in_features=4096, out_features=2048, bias=True)
+      (8): ReLU(inplace=True)
+      (9): Dropout(p=0.5, inplace=False)
+      (10): Linear(in_features=2048, out_features=32, bias=True)
+      (11): Sigmoid()
+    )
+  )
+)
+Starting loading train images ... ...
+Successfully loaded 22246 train images
+torch.Size([3, 256, 256]) torch.Size([32]) torch.Size([16, 2]) torch.Size([1])
+train_dataset_size= 22246
+train_loader_size= 742
+Starting loading val images ... ...
+Successfully loaded 2958 val images
+torch.Size([3, 256, 256]) torch.Size([32]) torch.Size([16, 2]) torch.Size([1])
+val_dataset_size= 2958
+val_loader_size= 99
+HBox(children=(FloatProgress(value=0.0, max=40.0), HTML(value='')))
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:1/41, train_loss: 0.0328091
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:2/41, train_loss: 0.0315993
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:3/41, train_loss: 0.2128428
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:4/41, train_loss: 0.2464970
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:4/41, val_loss: 0.2363652
+Updating best test loss: 0.2363652
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:5/41, train_loss: 0.2462312
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:6/41, train_loss: 0.2460566
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:7/41, train_loss: 0.2463540
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:8/41, train_loss: 0.2462290
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:8/41, val_loss: 0.2363939
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:9/41, train_loss: 0.2464437
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:10/41, train_loss: 0.2460267
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:11/41, train_loss: 0.2464345
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:12/41, train_loss: 0.2464291
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:12/41, val_loss: 0.2374357
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:13/41, train_loss: 0.2466637
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:14/41, train_loss: 0.2460586
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:15/41, train_loss: 0.2466826
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:16/41, train_loss: 0.2463077
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:16/41, val_loss: 0.2402263
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:17/41, train_loss: 0.2459883
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:18/41, train_loss: 0.2464455
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:19/41, train_loss: 0.2463951
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:20/41, train_loss: 0.2459870
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:20/41, val_loss: 0.2403899
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:21/41, train_loss: 0.2462888
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:22/41, train_loss: 0.2465274
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:23/41, train_loss: 0.2467978
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:24/41, train_loss: 0.2462038
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:24/41, val_loss: 0.2403255
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:25/41, train_loss: 0.2461381
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:26/41, train_loss: 0.2471855
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:27/41, train_loss: 0.2459143
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:28/41, train_loss: 0.2467172
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:28/41, val_loss: 0.2403023
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:29/41, train_loss: 0.2463777
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:30/41, train_loss: 0.2461819
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:31/41, train_loss: 0.2467004
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:32/41, train_loss: 0.2461363
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:32/41, val_loss: 0.2403785
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:33/41, train_loss: 0.2468425
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:34/41, train_loss: 0.2464199
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:35/41, train_loss: 0.2462552
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:36/41, train_loss: 0.2467525
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:36/41, val_loss: 0.2404605
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:37/41, train_loss: 0.2463022
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:38/41, train_loss: 0.2468230
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:39/41, train_loss: 0.2466729
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:40/41, train_loss: 0.2471540
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:40/41, val_loss: 0.2402961
+
+train_losses:
+ [0.03280908241868019, 0.0315992534160614, 0.21284279227256775, 0.2464970052242279, 0.24623118340969086, 0.24605658650398254, 0.24635404348373413, 0.24622897803783417, 0.24644367396831512, 0.24602670967578888, 0.2464345246553421, 0.24642907083034515, 0.24666374921798706, 0.2460586279630661, 0.24668259918689728, 0.24630773067474365, 0.24598832428455353, 0.24644547700881958, 0.246395081281662, 0.24598701298236847, 0.24628877639770508, 0.24652738869190216, 0.2467978298664093, 0.24620383977890015, 0.24613812565803528, 0.24718551337718964, 0.2459142655134201, 0.246717169880867, 0.24637766182422638, 0.24618186056613922, 0.24670039117336273, 0.24613629281520844, 0.24684253334999084, 0.24641986191272736, 0.24625521898269653, 0.24675250053405762, 0.24630218744277954, 0.24682295322418213, 0.24667291343212128, 0.24715396761894226]
+val_losses:
+ [0.2363652139902115, 0.23639394342899323, 0.23743565380573273, 0.24022628366947174, 0.2403898537158966, 0.24032552540302277, 0.24030229449272156, 0.2403784841299057, 0.24046054482460022, 0.24029606580734253]
+
+
+Starting 23th run
+device= cuda
+batch_size= 30
+n_epochs= 40
+init_lr= 1e-05
+Deeppose(
+  (alexnet): AlexNet(
+    (features): Sequential(
+      (0): Conv2d(3, 64, kernel_size=(11, 11), stride=(4, 4), padding=(2, 2))
+      (1): ReLU(inplace=True)
+      (2): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (3): Conv2d(64, 192, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+      (4): ReLU(inplace=True)
+      (5): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (6): Conv2d(192, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (7): ReLU(inplace=True)
+      (8): Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (9): ReLU(inplace=True)
+      (10): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (11): ReLU(inplace=True)
+      (12): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+    (avgpool): AdaptiveAvgPool2d(output_size=(6, 6))
+    (classifier): Sequential(
+      (0): Dropout(p=0.5, inplace=False)
+      (1): Linear(in_features=9216, out_features=4096, bias=True)
+      (2): ReLU(inplace=True)
+      (3): Dropout(p=0.5, inplace=False)
+      (4): Linear(in_features=4096, out_features=4096, bias=True)
+      (5): ReLU(inplace=True)
+      (6): Dropout(p=0.5, inplace=False)
+      (7): Linear(in_features=4096, out_features=2048, bias=True)
+      (8): ReLU(inplace=True)
+      (9): Dropout(p=0.5, inplace=False)
+      (10): Linear(in_features=2048, out_features=32, bias=True)
+      (11): Sigmoid()
+    )
+  )
+)
+Starting loading train images ... ...
+Successfully loaded 22246 train images
+torch.Size([3, 256, 256]) torch.Size([32]) torch.Size([16, 2]) torch.Size([1])
+train_dataset_size= 22246
+train_loader_size= 742
+Starting loading val images ... ...
+Successfully loaded 2958 val images
+torch.Size([3, 256, 256]) torch.Size([32]) torch.Size([16, 2]) torch.Size([1])
+val_dataset_size= 2958
+val_loader_size= 99
+HBox(children=(FloatProgress(value=0.0, max=40.0), HTML(value='')))
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:1/41, train_loss: 0.0296614
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:2/41, train_loss: 0.0273343
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:3/41, train_loss: 0.0266827
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:4/41, train_loss: 0.0262217
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:4/41, val_loss: 0.0232328
+Updating best test loss: 0.0232328
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:5/41, train_loss: 0.0260404
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:6/41, train_loss: 0.0261709
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:7/41, train_loss: 0.0259353
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:8/41, train_loss: 0.0259329
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:8/41, val_loss: 0.0220071
+Updating best test loss: 0.0220071
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:9/41, train_loss: 0.0258417
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:10/41, train_loss: 0.0257436
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:11/41, train_loss: 0.0259701
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:12/41, train_loss: 0.0258238
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:12/41, val_loss: 0.0230207
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:13/41, train_loss: 0.0259710
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:14/41, train_loss: 0.0258820
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:15/41, train_loss: 0.0259907
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:16/41, train_loss: 0.0258382
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:16/41, val_loss: 0.0224615
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:17/41, train_loss: 0.0258826
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:18/41, train_loss: 0.0258253
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:19/41, train_loss: 0.0258248
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:20/41, train_loss: 0.0256983
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:20/41, val_loss: 0.0223974
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:21/41, train_loss: 0.0257189
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:22/41, train_loss: 0.0257272
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:23/41, train_loss: 0.0257188
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:24/41, train_loss: 0.0256868
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:24/41, val_loss: 0.0218950
+Updating best test loss: 0.0218950
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:25/41, train_loss: 0.0256251
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:26/41, train_loss: 0.0257019
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:27/41, train_loss: 0.0256232
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:28/41, train_loss: 0.0257582
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:28/41, val_loss: 0.0224499
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:29/41, train_loss: 0.0257556
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:30/41, train_loss: 0.0256338
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:31/41, train_loss: 0.0257567
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:32/41, train_loss: 0.0256911
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:32/41, val_loss: 0.0221739
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:33/41, train_loss: 0.0256372
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:34/41, train_loss: 0.0255881
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:35/41, train_loss: 0.0256665
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:36/41, train_loss: 0.0257760
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:36/41, val_loss: 0.0227551
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:37/41, train_loss: 0.0258662
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:38/41, train_loss: 0.0258908
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:39/41, train_loss: 0.0258664
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:40/41, train_loss: 0.0260821
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:40/41, val_loss: 0.0226765
+
+train_losses:
+ [0.02966143935918808, 0.02733425423502922, 0.026682671159505844, 0.026221677660942078, 0.02604043483734131, 0.026170894503593445, 0.025935322046279907, 0.025932904332876205, 0.025841668248176575, 0.02574356086552143, 0.02597006782889366, 0.025823796167969704, 0.02597101405262947, 0.025882026180624962, 0.025990677997469902, 0.0258382186293602, 0.025882592424750328, 0.025825344026088715, 0.025824805721640587, 0.02569831907749176, 0.025718893855810165, 0.025727245956659317, 0.025718847289681435, 0.025686757639050484, 0.025625135749578476, 0.025701934471726418, 0.025623155757784843, 0.0257581640034914, 0.025755617767572403, 0.025633804500102997, 0.025756703689694405, 0.0256910752505064, 0.025637153536081314, 0.025588098913431168, 0.025666536763310432, 0.025775952264666557, 0.025866210460662842, 0.025890812277793884, 0.025866422802209854, 0.0260821171104908]
+val_losses:
+ [0.02323281392455101, 0.02200709655880928, 0.023020656779408455, 0.022461477667093277, 0.0223973598331213, 0.021894987672567368, 0.022449862211942673, 0.022173911333084106, 0.022755112498998642, 0.022676484659314156]
+
+
+Starting 24th run
+device= cuda
+batch_size= 30
+n_epochs= 40
+init_lr= 1e-05
+Deeppose(
+  (alexnet): AlexNet(
+    (features): Sequential(
+      (0): Conv2d(3, 64, kernel_size=(11, 11), stride=(4, 4), padding=(2, 2))
+      (1): ReLU(inplace=True)
+      (2): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (3): Conv2d(64, 192, kernel_size=(5, 5), stride=(1, 1), padding=(2, 2))
+      (4): ReLU(inplace=True)
+      (5): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+      (6): Conv2d(192, 384, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (7): ReLU(inplace=True)
+      (8): Conv2d(384, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (9): ReLU(inplace=True)
+      (10): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+      (11): ReLU(inplace=True)
+      (12): MaxPool2d(kernel_size=3, stride=2, padding=0, dilation=1, ceil_mode=False)
+    )
+    (avgpool): AdaptiveAvgPool2d(output_size=(6, 6))
+    (classifier): Sequential(
+      (0): Dropout(p=0.5, inplace=False)
+      (1): Linear(in_features=9216, out_features=4096, bias=True)
+      (2): ReLU(inplace=True)
+      (3): Dropout(p=0.5, inplace=False)
+      (4): Linear(in_features=4096, out_features=4096, bias=True)
+      (5): ReLU(inplace=True)
+      (6): Dropout(p=0.5, inplace=False)
+      (7): Linear(in_features=4096, out_features=2048, bias=True)
+      (8): ReLU(inplace=True)
+      (9): Dropout(p=0.5, inplace=False)
+      (10): Linear(in_features=2048, out_features=32, bias=True)
+      (11): Sigmoid()
+    )
+  )
+)
+Starting loading train images ... ...
+Successfully loaded 22246 train images
+torch.Size([3, 256, 256]) torch.Size([32]) torch.Size([16, 2]) torch.Size([1])
+train_dataset_size= 22246
+train_loader_size= 742
+Starting loading val images ... ...
+Successfully loaded 2958 val images
+torch.Size([3, 256, 256]) torch.Size([32]) torch.Size([16, 2]) torch.Size([1])
+val_dataset_size= 2958
+val_loader_size= 99
+HBox(children=(FloatProgress(value=0.0, max=40.0), HTML(value='')))
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:1/41, train_loss: 0.0286344
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:2/41, train_loss: 0.0269923
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:3/41, train_loss: 0.0269291
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:4/41, train_loss: 0.0266121
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:4/41, val_loss: 0.0243515
+Updating best test loss: 0.0243515
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:5/41, train_loss: 0.0263644
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:6/41, train_loss: 0.0260443
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:7/41, train_loss: 0.0259132
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:8/41, train_loss: 0.0258441
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:8/41, val_loss: 0.0228638
+Updating best test loss: 0.0228638
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:9/41, train_loss: 0.0259453
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:10/41, train_loss: 0.0258443
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:11/41, train_loss: 0.0258565
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:12/41, train_loss: 0.0258123
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:12/41, val_loss: 0.0229220
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:13/41, train_loss: 0.0259065
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:14/41, train_loss: 0.0258930
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:15/41, train_loss: 0.0258959
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:16/41, train_loss: 0.0258472
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:16/41, val_loss: 0.0223304
+Updating best test loss: 0.0223304
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:17/41, train_loss: 0.0258707
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:18/41, train_loss: 0.0258476
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:19/41, train_loss: 0.0258647
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:20/41, train_loss: 0.0258658
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:20/41, val_loss: 0.0224734
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:21/41, train_loss: 0.0259326
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:22/41, train_loss: 0.0259175
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:23/41, train_loss: 0.0257837
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:24/41, train_loss: 0.0259092
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:24/41, val_loss: 0.0221265
+Updating best test loss: 0.0221265
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:25/41, train_loss: 0.0257857
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:26/41, train_loss: 0.0258574
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:27/41, train_loss: 0.0258293
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:28/41, train_loss: 0.0257192
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:28/41, val_loss: 0.0221390
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:29/41, train_loss: 0.0256895
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:30/41, train_loss: 0.0257894
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:31/41, train_loss: 0.0258849
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:32/41, train_loss: 0.0259788
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:32/41, val_loss: 0.0227127
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:33/41, train_loss: 0.0258297
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:34/41, train_loss: 0.0258894
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:35/41, train_loss: 0.0259123
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:36/41, train_loss: 0.0260146
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:36/41, val_loss: 0.0228607
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:37/41, train_loss: 0.0259780
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:38/41, train_loss: 0.0258919
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:39/41, train_loss: 0.0259982
+HBox(children=(FloatProgress(value=0.0, max=742.0), HTML(value='')))
+
+epoch:40/41, train_loss: 0.0258806
+HBox(children=(FloatProgress(value=0.0, max=99.0), HTML(value='')))
+
+epoch:40/41, val_loss: 0.0224338
+
+train_losses:
+ [0.02863437868654728, 0.026992345228791237, 0.026929063722491264, 0.02661212533712387, 0.02636440470814705, 0.02604428492486477, 0.025913193821907043, 0.02584405615925789, 0.025945261120796204, 0.025844259187579155, 0.02585647441446781, 0.025812281295657158, 0.025906529277563095, 0.02589295618236065, 0.025895919650793076, 0.025847166776657104, 0.025870690122246742, 0.02584761753678322, 0.025864705443382263, 0.025865791365504265, 0.025932561606168747, 0.02591751515865326, 0.025783684104681015, 0.02590923383831978, 0.025785671547055244, 0.02585741877555847, 0.02582925744354725, 0.025719229131937027, 0.025689532980322838, 0.02578936330974102, 0.025884879752993584, 0.02597883902490139, 0.025829728692770004, 0.025889430195093155, 0.02591230720281601, 0.02601458877325058, 0.025977974757552147, 0.025891918689012527, 0.02599819377064705, 0.02588062360882759]
+val_losses:
+ [0.024351516738533974, 0.022863760590553284, 0.022922029718756676, 0.022330375388264656, 0.022473422810435295, 0.02212652936577797, 0.022139014676213264, 0.022712716832756996, 0.022860674187541008, 0.022433815523982048]
