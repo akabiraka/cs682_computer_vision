@@ -1,0 +1,3 @@
+
+# for MPII
+dataset = 'mpii'
