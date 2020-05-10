@@ -153,10 +153,10 @@ def draw_raw_img_with_raw_points():
 
 
 def main():
-    # draw_train_losses()
-    # draw_val_losses()
-    # draw_train_img_with_converted_points()
-    # draw_raw_img_with_raw_points()
+    draw_train_losses()
+    draw_val_losses()
+    draw_train_img_with_converted_points()
+    draw_raw_img_with_raw_points()
     draw_prediction_vs_target()
 
 
