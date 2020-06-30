@@ -131,3 +131,4 @@ dmypy.json
 hw2/ST2MainHall4/ST2MainHall*
 hw3/ST2MainHall4/ST2MainHall*
 project_human_pose_estimation/data/mpii/images/*
+project_human_pose_estimation/output_models/best_model*
