@@ -1,7 +1,6 @@
 # Human pose estimation using DeepPose
 
-## Project report
-For further details of model building and analysis, the authors are referred to the report [Human pose estimation using DeepPose](https://github.com/akabiraka/cs682_computer_vision/blob/master/project_human_pose_estimation/report_presentation/Human_pose_estimation.pdf).
+Details of model building and analysis can be found in the project report [Human pose estimation using DeepPose](https://github.com/akabiraka/cs682_computer_vision/blob/master/project_human_pose_estimation/report_presentation/Human_pose_estimation.pdf).
 
 ## Overview of directories
 ```
