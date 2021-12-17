@@ -1,6 +1,8 @@
 # Project title
 Human pose estimation using Deeppose
 
+## Project report [Human pose estimation using Deeppose](https://github.com/akabiraka/cs682_computer_vision/blob/master/project_human_pose_estimation/report_presentation/Human_pose_estimation.pdf)
+
 ## Overview of directories
 ```
 --/data
